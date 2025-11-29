@@ -19,6 +19,12 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.0.3](https://github.com/perfect-panel/frontend/compare/v1.0.2...v1.0.3) (2025-11-29)
+
+### 🐛 Bug Fixes / 问题修复
+
+* update asset names in release configuration for admin and user applications ([7cbccee](https://github.com/perfect-panel/frontend/commit/7cbccee32ef18700fcba0f66886219e70692e8be))
+
 ## [1.0.2](https://github.com/perfect-panel/frontend/compare/v1.0.1...v1.0.2) (2025-11-29)
 
 ### 🐛 Bug Fixes / 问题修复
