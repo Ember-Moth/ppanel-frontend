@@ -10,7 +10,7 @@
   "delete": "删除",
   "deleteSuccess": "删除成功",
   "deleteWarning": "删除后数据无法恢复，请谨慎操作。",
-  "deviceLimit": "设备限制/单位",
+  "deviceLimit": "IP限制",
   "edit": "编辑",
   "editSubscribe": "编辑订阅",
   "form": {
@@ -22,7 +22,7 @@
     "deductionRatio": "自动/手动扣减配置",
     "deductionRatioDescription": "用于扣减。默认情况下，系统采用自动计算算法。当提供手动比例时，系统根据时间和流量比例计算比例，确保总和为 100%。",
     "description": "描述",
-    "deviceLimit": "设备限制",
+    "deviceLimit": "IP限制",
     "discount": "折扣",
     "discount_price": "折扣价格",
     "discountDescription": "根据单价设置折扣",
