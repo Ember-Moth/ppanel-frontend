@@ -28,7 +28,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import packageJson from "../../../../../../package.json";
-import SystemLogsDialog from "./system-logs-dialog";
 
 export default function SystemVersionCard() {
   const { t } = useTranslation("tool");
@@ -136,7 +135,6 @@ export default function SystemVersionCard() {
         <CardTitle className="flex items-center justify-between">
           {t("systemServices", "System Services")}
           <div className="flex items-center space-x-2">
-            <SystemLogsDialog size="sm" variant="outline" />
             <AlertDialog onOpenChange={setOpenRestart} open={openRestart}>
               <AlertDialogTrigger asChild>
                 <Button size="sm" variant="destructive">
