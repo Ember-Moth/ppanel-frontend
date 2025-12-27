@@ -209,7 +209,7 @@ docker compose ps
 After successful installation, you can access:
 
 - **User Panel**: `http://your-server-ip:8080`
-- **Admin Panel**: `http://your-server-ip:8080/admin`
+- **Admin Panel**: `http://your-server-ip:8080/admin/`
 
 ::: warning Default Credentials
 Please change the default admin password immediately after first login for security.
