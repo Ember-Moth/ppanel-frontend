@@ -19,6 +19,13 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.3.2](https://github.com/perfect-panel/frontend/compare/v1.3.1...v1.3.2) (2025-12-29)
+
+### 🐛 Bug Fixes / 问题修复
+
+* Refactor update dialog logic in SystemVersionCard for better clarity and handling of update states ([0690deb](https://github.com/perfect-panel/frontend/commit/0690debf6c1bab7472468c742f9b15639f904c20))
+* Update default inventory value in SubscribeForm to -1 for better handling of inventory state ([2f50c6d](https://github.com/perfect-panel/frontend/commit/2f50c6df3345e26bc92f5730bc8b891d0515a367))
+
 ## [1.3.1](https://github.com/perfect-panel/frontend/compare/v1.3.0...v1.3.1) (2025-12-29)
 
 ### 🐛 Bug Fixes / 问题修复
