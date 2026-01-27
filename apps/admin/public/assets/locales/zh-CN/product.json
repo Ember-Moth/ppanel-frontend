@@ -50,8 +50,6 @@
     "quota": "购买限制",
     "renewalReset": "续费重置",
     "renewalResetDescription": "续费时重置周期",
-    "showOriginalPrice": "展示原价",
-    "showOriginalPriceDescription": "在购买页/展示页显示原价",
     "replacement": "重置价格（每次）",
     "resetCycle": "重置周期",
     "resetOn1st": "每月1日重置",
