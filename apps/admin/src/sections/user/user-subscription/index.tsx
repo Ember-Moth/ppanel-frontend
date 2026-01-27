@@ -15,6 +15,9 @@ import {
   createUserSubscribe,
   deleteUserSubscribe,
   getUserSubscribe,
+  resetUserSubscribeToken,
+  resetUserSubscribeTraffic,
+  toggleUserSubscribeStatus,
   updateUserSubscribe,
 } from "@workspace/ui/services/admin/user";
 import { useRef, useState } from "react";
@@ -68,6 +71,69 @@ export default function UserSubscription({ userId }: { userId: number }) {
           >
             {t("copySubscription", "Copy Subscription")}
           </Button>,
+
+          <ConfirmButton
+            cancelText={t("cancel", "Cancel")}
+            confirmText={t("confirm", "Confirm")}
+            description={t(
+              "resetSubscriptionTokenDescription",
+              "This will reset the subscription token. Old links will become invalid."
+            )}
+            key="reset-token"
+            onConfirm={async () => {
+              await resetUserSubscribeToken({ user_subscribe_id: row.id });
+              toast.success(t("resetSuccess", "Reset successfully"));
+              ref.current?.refresh();
+            }}
+            title={t("resetSubscriptionToken", "Reset Token")}
+            trigger={
+              <Button variant="outline">
+                {t("resetToken", "Reset Token")}
+              </Button>
+            }
+          />,
+
+          <ConfirmButton
+            cancelText={t("cancel", "Cancel")}
+            confirmText={t("confirm", "Confirm")}
+            description={t(
+              "resetSubscriptionTrafficDescription",
+              "This will reset the subscription traffic counters."
+            )}
+            key="reset-traffic"
+            onConfirm={async () => {
+              await resetUserSubscribeTraffic({ user_subscribe_id: row.id });
+              toast.success(t("resetSuccess", "Reset successfully"));
+              ref.current?.refresh();
+            }}
+            title={t("resetSubscriptionTraffic", "Reset Traffic")}
+            trigger={
+              <Button variant="outline">
+                {t("resetTraffic", "Reset Traffic")}
+              </Button>
+            }
+          />,
+
+          <ConfirmButton
+            cancelText={t("cancel", "Cancel")}
+            confirmText={t("confirm", "Confirm")}
+            description={t(
+              "toggleSubscriptionStatusDescription",
+              "This will toggle the subscription status."
+            )}
+            key="toggle-status"
+            onConfirm={async () => {
+              await toggleUserSubscribeStatus({ user_subscribe_id: row.id });
+              toast.success(t("updateSuccess", "Updated successfully"));
+              ref.current?.refresh();
+            }}
+            title={t("toggleSubscriptionStatus", "Toggle Status")}
+            trigger={
+              <Button variant="outline">
+                {t("toggleStatus", "Toggle Status")}
+              </Button>
+            }
+          />,
           <ConfirmButton
             cancelText={t("cancel", "Cancel")}
             confirmText={t("confirm", "Confirm")}
