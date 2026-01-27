@@ -49,6 +49,8 @@
     "quota": "Purchase Limit",
     "renewalReset": "Renewal Reset",
     "renewalResetDescription": "Reset cycle upon renewal",
+    "showOriginalPrice": "Show Original Price",
+    "showOriginalPriceDescription": "Display original price in the storefront",
     "replacement": "Reset Price (per time)",
     "resetCycle": "Reset Cycle",
     "resetOn1st": "Reset on the 1st",
