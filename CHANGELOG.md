@@ -19,6 +19,12 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.3.11](https://github.com/perfect-panel/frontend/compare/v1.3.10...v1.3.11) (2026-02-21)
+
+### 🐛 Bug Fixes / 问题修复
+
+* **admin:** stabilize node sorting with duplicate sort values ([15fc37d](https://github.com/perfect-panel/frontend/commit/15fc37db9eae389644c287763b09c88eed9e2f75))
+
 ## [1.3.10](https://github.com/perfect-panel/frontend/compare/v1.3.9...v1.3.10) (2026-02-10)
 
 ### 🐛 Bug Fixes / 问题修复
