@@ -19,6 +19,26 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.5.0](https://github.com/perfect-panel/frontend/compare/v1.4.2...v1.5.0) (2026-05-11)
+
+### ✨ Features / 新功能
+
+* **ci:** add issue triage automation workflow ([1624303](https://github.com/perfect-panel/frontend/commit/1624303b84fca99237f16c71e6d14b03682ec326))
+* **ci:** also trigger triage on new issue comments ([ec2bc9a](https://github.com/perfect-panel/frontend/commit/ec2bc9ac827cae7fe3b8e0e472b6a18b122818ea))
+* **triage:** include comment data in context for issue_comment events ([c5cc754](https://github.com/perfect-panel/frontend/commit/c5cc754ede249d022563fa2afb728690b16a6eee))
+
+### 🐛 Bug Fixes / 问题修复
+
+* **ui:** remove hardcoded Aceternity placeholder text from Timeline component ([d61bcde](https://github.com/perfect-panel/frontend/commit/d61bcde7bfd22611fb6014aaf7106721133e26a1))
+
+### 📚 Documentation / 文档更新
+
+* **zh-CN:** align clone directory with frontend repo name ([c8f35d9](https://github.com/perfect-panel/frontend/commit/c8f35d922c2b5a4de00973cb5875c17fb512c885))
+
+### 👷 Continuous Integration / CI/CD
+
+* add workflow_dispatch trigger to triage-automation ([e8fa276](https://github.com/perfect-panel/frontend/commit/e8fa276385f12378896a6a6e6b4532881ea8edfe))
+
 ## [1.4.2](https://github.com/perfect-panel/frontend/compare/v1.4.1...v1.4.2) (2026-04-06)
 
 ### 🐛 Bug Fixes / 问题修复
