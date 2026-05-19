@@ -70,7 +70,7 @@ const buildSchema = (t: TFunction) =>
       .int()
       .min(1, t("errors.portRange", "Port must be between 1 and 65535"))
       .max(65_535, t("errors.portRange", "Port must be between 1 and 65535")),
-    tags: z.preprocess((v) => (Array.isArray(v) ? v : []), z.array(z.string())),
+    tags: z.array(z.string()),
   });
 
 export type NodeFormValues = z.infer<ReturnType<typeof buildSchema>>;
@@ -108,7 +108,7 @@ export default function NodeForm(props: {
     });
   };
 
-  const form = useForm<NodeFormValues>({
+  const form = useForm<NodeFormValues, any, NodeFormValues>({
     resolver: zodResolver(Scheme),
     defaultValues: {
       name: "",
