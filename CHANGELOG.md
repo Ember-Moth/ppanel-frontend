@@ -19,6 +19,12 @@ This document records all notable changes to ShadCN Admin.
 ---
 
 
+## [1.6.0](https://github.com/perfect-panel/frontend/compare/v1.5.2...v1.6.0) (2026-05-20)
+
+### ✨ Features / 新功能
+
+* add per-node config UI and structured outbound form ([#59](https://github.com/perfect-panel/frontend/issues/59)) ([23fe0d3](https://github.com/perfect-panel/frontend/commit/23fe0d3dcb4571431446b505a92bd4143c48dad5))
+
 ## [1.5.2](https://github.com/perfect-panel/frontend/compare/v1.5.1...v1.5.2) (2026-05-19)
 
 ### 🐛 Bug Fixes / 问题修复
