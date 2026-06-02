@@ -32,6 +32,8 @@ const ss = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const vmess = z.object({
@@ -50,6 +52,8 @@ const vmess = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const vless = z.object({
@@ -84,6 +88,8 @@ const vless = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const trojan = z.object({
@@ -102,6 +108,8 @@ const trojan = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const hysteria = z.object({
@@ -122,6 +130,8 @@ const hysteria = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const tuic = z.object({
@@ -141,6 +151,8 @@ const tuic = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const anytls = z.object({
@@ -156,6 +168,8 @@ const anytls = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
   reality_server_addr: nullableString,
   reality_server_port: nullablePort,
   reality_private_key: nullableString,
@@ -182,6 +196,8 @@ const naive = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const http = z.object({
@@ -196,6 +212,8 @@ const http = z.object({
   cert_mode: z.enum(CERT_MODES).nullish(),
   cert_dns_provider: nullableString,
   cert_dns_env: nullableString,
+  cert_fingerprint_sha256: nullableString,
+  reported_cert_fingerprint_sha256: nullableString,
 });
 
 const mieru = z.object({

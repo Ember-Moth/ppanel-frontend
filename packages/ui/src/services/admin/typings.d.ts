@@ -1409,6 +1409,8 @@ declare namespace API {
     sni?: string;
     allow_insecure?: boolean;
     fingerprint?: string;
+    cert_fingerprint_sha256?: string;
+    reported_cert_fingerprint_sha256?: string;
     transport?: string;
     host?: string;
     path?: string;
@@ -1600,6 +1602,8 @@ declare namespace API {
     sni?: string;
     allow_insecure?: boolean;
     fingerprint?: string;
+    cert_fingerprint_sha256?: string;
+    reported_cert_fingerprint_sha256?: string;
     reality_server_addr?: string;
     reality_server_port?: number;
     reality_private_key?: string;
@@ -1922,6 +1926,8 @@ declare namespace API {
     sni: string;
     allow_insecure: boolean;
     fingerprint: string;
+    cert_fingerprint_sha256?: string;
+    reported_cert_fingerprint_sha256?: string;
     reality_server_addr: string;
     reality_server_port: number;
     reality_private_key: string;

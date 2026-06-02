@@ -51,6 +51,8 @@ export const outboundConfigSchema = z.object({
   sni: text,
   allow_insecure: z.boolean().optional(),
   fingerprint: text,
+  cert_fingerprint_sha256: text,
+  reported_cert_fingerprint_sha256: text,
   transport: text,
   host: text,
   path: text,
@@ -184,6 +186,9 @@ export function normalizeOutboundConfig(
       item.fingerprint,
       ["tls", "reality"].includes(security) ? "chrome" : ""
     ),
+    cert_fingerprint_sha256: item.cert_fingerprint_sha256 || "",
+    reported_cert_fingerprint_sha256:
+      item.reported_cert_fingerprint_sha256 || "",
     transport: stringOrDefault(
       item.transport,
       defaultTransportForProtocol(protocol)
@@ -406,6 +411,30 @@ export function getOutboundFields(t: any): OutboundFieldConfig[] {
       options: FINGERPRINTS.map((value) => ({ label: getLabel(value), value })),
       visible: (item: Record<string, unknown>) =>
         ["tls", "reality"].includes(String(item.security || "")),
+    },
+    {
+      name: "cert_fingerprint_sha256",
+      type: "text",
+      label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+      group: "security",
+      placeholder: t(
+        "cert_fingerprint_sha256_placeholder",
+        "e.g. AA:BB:CC:DD:EE:FF..."
+      ),
+      visible: (item: Record<string, unknown>) =>
+        ["tls", "reality"].includes(String(item.security || "")),
+    },
+    {
+      name: "reported_cert_fingerprint_sha256",
+      type: "text",
+      label: t("reported_cert_fingerprint_sha256", "Reported Cert Fingerprint"),
+      group: "security",
+      placeholder: t(
+        "reported_cert_fingerprint_sha256_placeholder",
+        "Auto-reported by node"
+      ),
+      visible: (item: Record<string, unknown>) =>
+        !!item.reported_cert_fingerprint_sha256,
     },
     {
       name: "allow_insecure",

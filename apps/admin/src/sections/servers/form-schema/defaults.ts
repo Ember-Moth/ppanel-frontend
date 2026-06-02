@@ -18,6 +18,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "vmess":
@@ -36,6 +38,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "vless":
@@ -70,6 +74,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "trojan":
@@ -88,6 +94,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "hysteria":
@@ -108,6 +116,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "tuic":
@@ -126,6 +136,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "socks":
@@ -147,6 +159,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "http":
@@ -161,6 +175,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         ratio: 1,
       } as any;
     case "mieru":
@@ -184,6 +200,8 @@ export function getProtocolDefaultConfig(proto: ProtocolType) {
         cert_mode: "none",
         cert_dns_provider: null,
         cert_dns_env: null,
+        cert_fingerprint_sha256: null,
+        reported_cert_fingerprint_sha256: null,
         reality_server_addr: null,
         reality_server_port: null,
         reality_private_key: null,

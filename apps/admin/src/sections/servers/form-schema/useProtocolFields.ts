@@ -135,6 +135,29 @@ export function useProtocolFields() {
           group: "security",
           condition: (p) => p.obfs === "tls" && p.cert_mode === "dns",
         },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
+        },
       ],
       vmess: [
         {
@@ -245,6 +268,29 @@ export function useProtocolFields() {
             "CF_DNS_API_TOKEN=1234567890abcdefghijklmnopqrstuvwxyz\nALI_ACCESS_KEY_ID=your_access_key_id\nALI_ACCESS_KEY_SECRET=your_access_key_secret",
           group: "security",
           condition: (p) => p.security === "tls" && p.cert_mode === "dns",
+        },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
         },
       ],
       vless: [
@@ -539,6 +585,29 @@ export function useProtocolFields() {
           group: "security",
           condition: (p) => p.security === "tls" && p.cert_mode === "dns",
         },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
+        },
       ],
       trojan: [
         {
@@ -649,6 +718,29 @@ export function useProtocolFields() {
             "CF_DNS_API_TOKEN=1234567890abcdefghijklmnopqrstuvwxyz\nALI_ACCESS_KEY_ID=your_access_key_id\nALI_ACCESS_KEY_SECRET=your_access_key_secret",
           group: "security",
           condition: (p) => p.security === "tls" && p.cert_mode === "dns",
+        },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
         },
       ],
       hysteria: [
@@ -778,6 +870,29 @@ export function useProtocolFields() {
           group: "security",
           condition: (p) => p.cert_mode === "dns",
         },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
+        },
       ],
       tuic: [
         {
@@ -871,6 +986,29 @@ export function useProtocolFields() {
             "CF_DNS_API_TOKEN=1234567890abcdefghijklmnopqrstuvwxyz\nALI_ACCESS_KEY_ID=your_access_key_id\nALI_ACCESS_KEY_SECRET=your_access_key_secret",
           group: "security",
           condition: (p) => p.cert_mode === "dns",
+        },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
         },
       ],
       socks: [
@@ -971,6 +1109,29 @@ export function useProtocolFields() {
           group: "security",
           condition: (p) => p.security === "tls" && p.cert_mode === "dns",
         },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
+        },
       ],
       http: [
         {
@@ -1048,6 +1209,29 @@ export function useProtocolFields() {
             "CF_DNS_API_TOKEN=1234567890abcdefghijklmnopqrstuvwxyz\nALI_ACCESS_KEY_ID=your_access_key_id\nALI_ACCESS_KEY_SECRET=your_access_key_secret",
           group: "security",
           condition: (p) => p.security === "tls" && p.cert_mode === "dns",
+        },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
         },
       ],
       mieru: [
@@ -1173,6 +1357,29 @@ export function useProtocolFields() {
             "CF_DNS_API_TOKEN=1234567890abcdefghijklmnopqrstuvwxyz\nALI_ACCESS_KEY_ID=your_access_key_id\nALI_ACCESS_KEY_SECRET=your_access_key_secret",
           group: "security",
           condition: (p) => p.cert_mode === "dns",
+        },
+        {
+          name: "cert_fingerprint_sha256",
+          type: "input",
+          label: t("cert_fingerprint_sha256", "Cert Fingerprint (SHA-256)"),
+          placeholder: t(
+            "cert_fingerprint_sha256_placeholder",
+            "e.g. AA:BB:CC:DD:EE:FF... or 64 hex chars"
+          ),
+          group: "security",
+        },
+        {
+          name: "reported_cert_fingerprint_sha256",
+          type: "input",
+          label: t(
+            "reported_cert_fingerprint_sha256",
+            "Reported Cert Fingerprint"
+          ),
+          placeholder: t(
+            "reported_cert_fingerprint_sha256_placeholder",
+            "Auto-reported by node; read-only"
+          ),
+          group: "security",
         },
         {
           name: "reality_server_addr",
